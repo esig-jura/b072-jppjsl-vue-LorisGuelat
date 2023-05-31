@@ -9,18 +9,19 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Accueil',
+      name: 'accueil',
       component: AccueilView
     },
     {
       path: '/service-client',
-      name: 'Service-client',
+      name: 'service-client',
       component: ServiceClientView
     },
     {
       path: '/sabre/:id',
-      name: 'Fiche sabre',
-      component: FicheSabreView
+      name: 'sabre',
+      component: FicheSabreView,
+      props: true
     }
   ]
 })
